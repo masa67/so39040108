@@ -1,9 +1,9 @@
 
 import express from 'express';
-import own from './own';
+import session from 'express-session';
+import own from './types/own';
 
 const app = express();
 app.get('/', (req, res) => {
-    let r: Request;
-    r.
+    let username = req!.session!.user.login;
 });
